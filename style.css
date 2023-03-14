@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: url(https://cur.cursors-4u.net/others/oth-2/oth110.cur), auto !important;
+}
+
+@font-face {
+    font-family: "UnifrakturCook";
+    src: url("/assets/UnifrakturCook-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'PermanentMarkeer';
+    src: url(/assetsScaryGhotic/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BeauRivage';
+    src: url(/assetsScaryGhotic/BeauRivage-Regular.ttf);
+}
+
+@keyframes flickering {
+    0% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    5% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    10% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(-15deg);
+    }
+    15% {
+        color: #ccc;
+        text-shadow: none;
+        transform: skewX(-15deg);
+    }
+    20% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    25% {
+        color: #ccc;
+        text-shadow: 2px 2px #912914;
+        transform: skewX(0);
+    }
+    30% {
+        color: #ccc;
+        text-shadow: 2px 2px #912914;
+        transform: skewX(0);
+    }
+    35% {
+        color: #ccc;
+        text-shadow: 2px 2px #912914;
+        transform: skewX(0);
+    }
+    37% {
+        color: #ccc;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    40% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    45% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    50% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    55% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    60% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    65% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    68% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    70% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    75% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    80% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    85% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    90% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    95% {
+        color: #912914;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    100% {
+        color: #912914;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+}
+
+@keyframes linkHover {
+    0% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    5% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    10% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(-15deg);
+    }
+    15% {
+        color: #ccc;
+        text-shadow: none;
+        transform: skewX(-15deg);
+    }
+    20% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    25% {
+        color: #ccc;
+        text-shadow: 2px 2px #ff0015;
+        transform: skewX(0);
+    }
+    30% {
+        color: #ccc;
+        text-shadow: 2px 2px #ff0015;
+        transform: skewX(0);
+    }
+    35% {
+        color: #ccc;
+        text-shadow: 2px 2px #ff0015;
+        transform: skewX(0);
+    }
+    37% {
+        color: #ccc;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    40% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    45% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    50% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    55% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    60% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    65% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    68% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    70% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    75% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    80% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    85% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(10deg);
+    }
+    90% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+    95% {
+        color: #ff0015;
+        text-shadow: 1px 1px #eee;
+        transform: skewX(0);
+    }
+    100% {
+        color: #ff0015;
+        text-shadow: none;
+        transform: skewX(0);
+    }
+}
+
+
+/* Additional styling */
+
+a {
+    cursor: url(https://cur.cursors-4u.net/others/oth-2/oth113.cur), auto !important;
+    color: #ff0015;
+    text-decoration: none;
+}
+
+a:hover,
+.footer p:hover {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: linkHover;
+    animation-timing-function: step-start;
+}
+
+header {
+    padding: 5px;
+    background-color: #11070a;
+    width: auto;
+    height: 130px;
+    overflow: hidden;
+    border-bottom: 4px double #fffcfe;
+    min-width: 700px;
+}
+
+.logo {
+    margin-top: 35px;
+    margin-left: 240px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.horror-text {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: flickering;
+    animation-timing-function: step-start;
+    color: #ff0015;
+    font-family: 'PermanentMarkeer';
+    font-size: 60px;
+    cursor: url(https://cur.cursors-4u.net/others/oth-1/oth93.ani), url(https://cur.cursors-4u.net/others/oth-1/oth93.png), auto !important;
+}
+
+.little-text {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: flickering;
+    animation-timing-function: step-start;
+    color: #fffcfe;
+    font-family: 'BeauRivage';
+    font-size: 25px;
+    cursor: url(https://cur.cursors-4u.net/others/oth-1/oth93.ani), url(https://cur.cursors-4u.net/others/oth-1/oth93.png), auto !important;
+}
+
+.main {
+    min-height: 100vh;
+    width: auto;
+    overflow: hidden;
+    background-image: url(/assetsScaryGhotic/blodyTree.gif);
+    background-size: contain;
+}
+
+.wrapper {
+    background-color: #11070a;
+    width: auto;
+    height: auto;
+    border-left: 4px double #fffcfe;
+    border-right: 4px double #fffcfe;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    max-width: 502px;
+    min-width: 688px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.sitebar {
+    max-width: 310px;
+    margin-bottom: auto;
+    font-family: 'PermanentMarkeer';
+    min-width: 150pxpx;
+}
+
+.reklama {
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+.oboMne {
+    font-family: 'PermanentMarkeer';
+    list-style: none;
+    margin: 0px;
+    padding: 5px 5px 5px 10px;
+    color: #fffcfe;
+    border-left: 4px double #fffcfe;
+    border-bottom: 4px double #fffcfe;
+}
+
+.content {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.wind {
+    border: solid 2px #fffcfe;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.somePost {
+    display: block;
+    background-color: black;
+    border: solid 2px #fffcfe;
+    padding: 5px;
+    color: #fffcfe;
+    margin-bottom: 10px;
+}
+
+.underFooter {
+    text-align: center;
+    color: #fffcfe;
+    font-family: 'PermanentMarkeer';
+    margin-top: 30px;
+}
+
+.underFooter p {
+    margin: 10px;
+}
+
+.footer {
+    margin-top: auto;
+    width: auto;
+    height: 70px;
+    background-color: black;
+    color: #fffcfe;
+    font-family: 'PermanentMarkeer';
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    border-top: 4px double #fffcfe;
+}
